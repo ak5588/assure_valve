@@ -1,14 +1,23 @@
-const CLIENTS = [
-  "SIEMENS",
-  "FLOWSERVE",
-  "L&T",
-  "BHEL",
-  "GE",
-  "ABB",
-  "TECHNO CRAFT",
-  "MECHLINE",
-  "LAXMI ENG.",
-  "ASSURE",
+import aparLogo from "@/assets/companies_image/apar.png";
+import crayogasLogo from "@/assets/companies_image/crayogas.png";
+import econLogo from "@/assets/companies_image/econ.png";
+import flowserveLogo from "@/assets/companies_image/flowserve.png";
+import gspLogo from "@/assets/companies_image/gsp.png";
+import schwartzLogo from "@/assets/companies_image/schwartz.png";
+import seeLogo from "@/assets/companies_image/see_linkages.png";
+import siemensLogo from "@/assets/companies_image/siemens.png";
+import steLogo from "@/assets/companies_image/ste.png";
+
+const CLIENT_LOGOS = [
+  { name: "Siemens Energy India", logo: siemensLogo, alt: "Siemens logo" },
+  { name: "Apar Industries Ltd", logo: aparLogo, alt: "Apar Industries logo" },
+  { name: "ECON Machinery Pvt. Ltd", logo: econLogo, alt: "ECON Machinery logo" },
+  { name: "Flowserve India", logo: flowserveLogo, alt: "Flowserve logo" },
+  { name: "Crayogas Equipment Pvt. Ltd", logo: crayogasLogo, alt: "Crayogas logo" },
+  { name: "GSP Crop Science Ltd", logo: gspLogo, alt: "GSP logo" },
+  { name: "Schwartz Turbo Tech Pvt. Ltd", logo: schwartzLogo, alt: "Schwartz Turbo Tech logo" },
+  { name: "SEE Linkages Pvt. Ltd", logo: seeLogo, alt: "SEE Linkages logo" },
+  { name: "Steam Turbine Engineering", logo: steLogo, alt: "STE logo" },
 ];
 
 export function Clients() {
@@ -26,21 +35,28 @@ export function Clients() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-px bg-border border border-border">
-          {CLIENTS.map((c) => (
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+          {CLIENT_LOGOS.map((client) => (
             <div
-              key={c}
-              className="bg-background aspect-[3/1] flex items-center justify-center px-4 group hover:bg-secondary transition-colors"
+              key={client.name}
+              className="rounded-3xl border border-white/10 bg-surface p-6 shadow-sm shadow-black/5 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md"
             >
-              <span className="font-display text-sm md:text-base font-bold tracking-widest text-steel group-hover:text-primary transition-colors">
-                {c}
-              </span>
+              <div className="flex h-24 items-center justify-center">
+                <img
+                  src={client.logo}
+                  alt={client.alt}
+                  className="max-h-16 max-w-full object-contain"
+                />
+              </div>
+              <div className="mt-4 text-center text-xs uppercase tracking-[0.24em] text-muted-foreground">
+                {client.name}
+              </div>
             </div>
           ))}
         </div>
 
         <p className="mt-8 text-center text-xs text-muted-foreground uppercase tracking-widest">
-          Client names shown for representation. Formal vendor references available on request under NDA.
+          Logos shown with client permission. Vendor references available on request.
         </p>
       </div>
     </section>

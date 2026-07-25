@@ -27,32 +27,30 @@ export function Hero() {
         >
           <div className="flex items-center gap-3 mb-6">
             <div className="h-px w-10 bg-accent" />
-            <span className="text-eyebrow text-accent">Precision Engineering Since 2005</span>
+            <span className="text-eyebrow text-accent">Trusted Manufacturing Partner Since 2005</span>
           </div>
 
-          <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.05] tracking-tight">
-            Precision CNC Machining &{" "}
-            <span className="text-accent">Valve Component</span>{" "}
-            Manufacturing.
+          <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-[1.05] tracking-tight">
+            Precision <span className="text-accent">Valve Components</span>, Turbine Parts &{" "}
+            <span className="block sm:inline">Specialized Welding Solutions.</span>
           </h1>
 
-          <p className="mt-8 text-lg lg:text-xl text-white/75 max-w-2xl leading-relaxed">
-            Delivering precision-engineered turbine and industrial components to global OEMs
-            with uncompromising quality, dimensional accuracy and on-time delivery from
-            Vadodara, India.
+          <p className="mt-6 sm:mt-8 text-base sm:text-lg lg:text-xl text-white/75 max-w-2xl leading-relaxed">
+            CNC machining, stellite and inconel welding, HVOF coating, thermal spray and
+            valve repair for OEMs across valve, pump, chemical and power industries.
           </p>
 
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row flex-wrap gap-4">
             <a
               href="#rfq"
-              className="group inline-flex items-center gap-3 bg-accent text-accent-foreground px-8 py-4 text-sm font-semibold uppercase tracking-wider hover:bg-accent-glow transition-colors"
+              className="group inline-flex w-full sm:w-auto items-center justify-center gap-3 bg-accent text-accent-foreground px-8 py-4 text-sm font-semibold uppercase tracking-wider hover:bg-accent-glow transition-colors"
             >
               Request Quote
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
               href="#capabilities"
-              className="inline-flex items-center gap-3 border border-white/30 text-white px-8 py-4 text-sm font-semibold uppercase tracking-wider hover:bg-white/10 transition-colors"
+              className="inline-flex w-full sm:w-auto items-center justify-center gap-3 border border-white/30 text-white px-8 py-4 text-sm font-semibold uppercase tracking-wider hover:bg-white/10 transition-colors"
             >
               Explore Capabilities
             </a>

@@ -5,7 +5,6 @@ import { Menu, X, Phone } from "lucide-react";
 const NAV = [
   { label: "Home", to: "/" as const },
   { label: "About", to: "/about" as const },
-  { label: "Capabilities", to: "/capabilities" as const },
   { label: "Machines", to: "/machines" as const },
   { label: "Products", to: "/products" as const },
   { label: "Quality", to: "/quality" as const },
@@ -37,10 +36,7 @@ export function Navbar() {
       <div className="container-industrial flex h-18 items-center justify-between py-3">
         <Link to="/" className="flex items-center gap-3 group">
           <div className="relative">
-            <div className="h-10 w-10 bg-primary flex items-center justify-center rounded-sm">
-              <span className="font-display font-bold text-primary-foreground text-lg">A</span>
-            </div>
-            <div className="absolute -bottom-0.5 -right-0.5 h-2 w-2 bg-accent" />
+            <img src="/assure_valve_logo.png" alt="Assure Valve Logo" className="h-14 w-auto md:h-16 object-contain rounded-sm" />
           </div>
           <div className="leading-tight">
             <div className={`font-display font-bold text-[15px] tracking-tight ${scrolled ? "text-foreground" : "text-white"}`}>

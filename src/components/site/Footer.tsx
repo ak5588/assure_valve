@@ -26,8 +26,7 @@ export function Footer() {
           <div className="lg:col-span-2">
             <div className="text-eyebrow text-accent mb-4">Company</div>
             <ul className="space-y-2 text-sm text-white/70">
-              <li><Link to="/about" className="hover:text-accent">About</Link></li>
-              <li><Link to="/capabilities" className="hover:text-accent">Capabilities</Link></li>
+              <li><Link to="/about" className="hover:text-accent">Capabilities</Link></li>
               <li><Link to="/machines" className="hover:text-accent">Machines</Link></li>
               <li><Link to="/quality" className="hover:text-accent">Quality</Link></li>
               <li><Link to="/clients" className="hover:text-accent">Clients</Link></li>
